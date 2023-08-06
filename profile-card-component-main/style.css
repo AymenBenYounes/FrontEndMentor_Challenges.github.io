@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("images/bg-pattern-bottom.svg");
+    background-color: hsl(185, 75%, 39%);
+}
+.main{
+    background-color: white;
+    width: 90%;
+    margin: 25% auto;
+    border-radius: 0.9em;
+    max-width: 480px;
+    overflow-y: hidden;
+}
+.main img{
+    width: 100%;
+    border-radius: 0.9em 0.9em 0 0;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.info img{
+    width: 30%;
+    border-radius: 50%;
+    padding-bottom: 1em;
+    border: 6px solid white;
+    margin-top: -15%;
+    align-self: center;
+}
+.info h1{
+    font-size: 18px;
+    font-family: 'Kumbh Sans';
+    color: hsl(229, 23%, 23%);
+    padding-bottom: 0.6em;
+}
+.info h1 span{
+    margin-left: 0.5em;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+.info h3{
+    font-size: 15px;
+    font-family: 'Kumbh Sans';
+    color: hsl(0, 0%, 59%);
+    padding-bottom: 1.5em;
+    font-weight: 400;
+}
+hr{
+    border: 1px solid hsl(0, 0%, 59%,0.2);
+    margin-bottom: 1.3em;
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+}
+.f,.l,.p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.stats h2{
+    font-size: 18px;
+    font-family: 'Kumbh Sans';
+    color: hsl(229, 23%, 23%);
+    padding-bottom: 0.5em;
+}
+.stats span{
+    font-size: 12px;
+    font-family: 'Kumbh Sans';
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+.attribution{
+    text-align: center;
+    font-family: 'Kumbh Sans';
+    margin-top: -10%;
+}
+@media only screen and (min-width:1000px) {
+    body{
+        background: url("images/bg-pattern-bottom.svg");
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-color: hsl(185, 75%, 39%);
+    }
+    .main{
+        background-color: white;
+        width: 90%;
+        margin: 10% auto;
+        border-radius: 0.9em;
+        max-width: 480px;
+        overflow-y: hidden;
+    }
+    .attribution{
+        text-align: center;
+        font-family: 'Kumbh Sans';
+        margin-top: 10%;
+    }
+}

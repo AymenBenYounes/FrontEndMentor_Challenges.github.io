@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 90%;
+    margin: 10% auto;
+    max-width: 460px;
+}
+.main img{
+    width: 20%;
+    padding-bottom: 2em;
+    max-width: 79px;
+}
+.main h1{
+    color: white;
+    font-family: 'Big Shoulders Display';
+    padding-bottom: 1em;
+    
+}
+.main p{
+    color: white;
+    opacity: 0.5;
+    font-family: 'Lexend Deca';
+    font-size: 0.9em;
+    line-height: 2em;
+    padding-bottom: 1em;
+}
+.main button{
+    padding: 1.1em 2.7em;
+    background-color: white;
+    border: 0;
+    border-radius: 2em;
+    font-family: 'Lexend Deca';
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.f{
+    padding: 2em;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.6em 0.6em 0 0;
+}
+.f button{
+    color: hsl(31, 77%, 52%);
+}
+.f button:active{
+    color: white;
+    background-color: inherit;
+    border: 2px solid white;
+}
+.s{
+    padding: 2em;
+    background-color: hsl(184, 100%, 22%);
+}
+.s button{
+    color: hsl(184, 100%, 22%);
+}
+.s button:active{
+    color: white;
+    background-color: inherit;
+    border: 2px solid white;
+}
+.t{
+    padding: 2em;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.6em 0.6em ;
+}
+.t button{
+    color: hsl(179, 100%, 13%);
+}
+.t button:active{
+    color: white;
+    background-color: inherit;
+    border: 2px solid white;
+}
+.attribution{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    padding-bottom: 2em;
+}
+@media only screen and (min-width:900px){
+    .main{
+        display: flex;
+        width: 90%;
+        max-width: 1400px;
+    }
+    .f{
+        padding: 2em;
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 0.6em 0 0 0.6em;
+    }
+    .t{
+        padding: 2em;
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0.6em 0.6em 0;
+    }
+    .main img{
+        width: 50%;
+        padding-bottom: 2em;
+    }
+    .main p{
+        padding-bottom: 6em;
+    }
+}
