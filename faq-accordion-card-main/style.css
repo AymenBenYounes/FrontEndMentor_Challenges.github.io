@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+body{
+    background: linear-gradient(to bottom , hsl(273, 75%, 66%) 50% , hsl(240, 73%, 65%));
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    text-align:center;
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    margin: 15% auto 0;
+    background-color: white;
+    border-radius: 2em;
+    padding: 0 1.5em 1.5em 1.5em;
+    box-shadow: 0 40px 30px rgb(0, 0, 0,0.3);
+}
+.imgm{
+    position: absolute;
+    width: clamp(180px,60%,300px);
+    margin: 0 auto;
+    top: -23%;
+    left: 20%;
+}
+#img1 , .container img:nth-of-type(2){
+    display: none;
+}
+.content{
+    margin-top: 30%;
+    text-align:left;
+}
+.container h1{
+    text-align: center;
+    padding-bottom: 1em;
+}
+p{
+    display: none;
+    font-size: .8em;
+    padding-top: .7em;
+    color: hsl(240, 6%, 50%);
+}
+hr{
+    margin: 5% 0;
+}
+.target{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.target img{
+    width: 10px;
+    height: 8px;
+}
+.target h2{
+    width: 90%;
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+    font-size: .8em;
+}
+.target h2:hover{
+    cursor: pointer;
+    color: hsl(14, 88%, 65%);
+}
+.attribution{
+    padding: 2em 0;
+    text-align: center;
+}
+@media only screen and (min-width:768px){
+    .container{
+        margin: 0 auto;
+        height: 55vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 850px;
+        overflow-x: hidden;
+    }
+    #img1,.container img:nth-of-type(2){
+        display: block;
+    }
+    .container img:nth-of-type(2){
+        position: absolute;
+        width: 50%;
+        top: 10%;
+        right: 57%;
+        overflow-x: hidden;
+    }
+    #img1{
+        width: 15%;
+        max-width: 150px;
+        position: absolute;
+        top: 345px;
+        left: 4%;
+        z-index: 2;
+    }
+    .imgm{
+        display: none;
+    }
+    .container{
+        margin-top: 3%;
+	max-height: 100%;
+	}
+    .content{
+        margin: 0 5% 0 0;
+        width: 50%;
+    }
+    .container h1{
+        text-align: left;
+        padding-bottom: 1em;
+    }
+}
