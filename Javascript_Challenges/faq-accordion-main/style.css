@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    background-image: url(assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    background-color: hsl(275, 100%, 97%);
+    min-height: 100vh;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 10px;
+}
+.content h1{
+    color: hsl(292, 42%, 14%);
+    font-weight: bold;
+    margin: .3em 0 0 2em;
+}
+.content h1::before{
+    content: url(assets/images/icon-star.svg);
+    position: absolute;
+    left: 9%;
+}
+.QNA{
+    margin-top: 1.2em;
+}
+.QNA .info{
+    margin-bottom: 1em;
+}
+.info .Q{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .7em;
+    color: hsl(292, 42%, 14%);
+}
+.info .Q h2{
+    width: 70%;
+    font-size: 1rem;
+}
+.info .Q h2:active{
+    color: hsl(293, 53%, 40%);
+    cursor: pointer;
+}
+.info .A{
+    display: none;
+    color: hsl(292, 16%, 49%);
+}
+#click{
+    cursor:pointer;
+}
+#show{
+    display: none;
+    cursor: pointer;
+}
+.attribution{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin-top: 1em;
+    padding: .3em;
+}
+@media only screen and (min-width:900px){
+    body{
+        background-image: url(assets/images/background-pattern-desktop.svg);
+    }
+    .container{
+        margin-top: 0;
+        height: 100vh;
+    }
+    .content{
+        padding: 2em;
+        max-width: 800px;
+    }
+    .content h1{
+        position: relative;
+    }
+    .content h1::before{
+        content: url(assets/images/icon-star.svg);
+        position: absolute;
+        left: -10%;
+    }
+}

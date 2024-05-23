@@ -10,7 +10,6 @@ for(var i=0;i<btn.length;i++){
             title.style.color='';
             title.style.color="hsl(238, 29%, 16%)";
             child.style.display="block"; 
-            
         }
         else{
             title.style.color="hsl(240, 6%, 50%)";
