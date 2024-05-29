@@ -5,6 +5,8 @@ document.getElementById("open_share").addEventListener("click",function(){
     var shown=grand_parent.lastElementChild;
     var device_width=window.innerWidth;
     if(parent.style.display!=="none" && device_width<1000){
+        document.getElementById("close_share").style.display='';
+        document.getElementById("close_share").style.display="block";
         parent.style.display="none";
         shown.style.display="block";
     }
