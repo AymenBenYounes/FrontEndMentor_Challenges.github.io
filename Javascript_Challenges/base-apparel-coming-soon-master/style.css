@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Josefin Sans, sans-serif;
+}
+body{
+    background-color: hsl(0, 0%, 99%);
+}
+img{
+    max-width: 100%;
+}
+.container{
+    margin: 1em auto 0 auto;
+    position: relative;
+}
+.container #logo{
+    width: 200px;
+    padding: 1em 2em;
+}
+.content{
+    margin-top: 1em;
+}
+.content .image_element{
+    min-height: 300px;
+    background-image: url(images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.info_element{
+    text-align: center;
+    margin: 2em auto;
+    width: 80%;
+    max-width: 565px;
+}
+.info_element h1{
+    max-width: 365px;
+    margin: 0 auto;
+    font-size: 2rem;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: .4em;
+    color: hsl(0, 6%, 24%);
+    padding-bottom: .4em;
+}
+.info_element h1 span{
+    font-weight: 300;
+    color: hsl(0, 36%, 70%) !important;
+}
+.info_element p{
+    text-align: center !important;
+    font-size: .9rem;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5em;
+    padding-bottom: 1.5em;
+}
+.input_field{
+    position: relative;
+}
+input{
+    display: inline-block;
+    width: 100%;
+    padding: 1em 2em;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 36%, 70%);
+    background-color: transparent;
+}
+input:focus{
+    outline: 0;
+    background-color: transparent;
+}
+input::placeholder{
+    color: hsl(0, 36%, 70%);
+    opacity: .5;
+}
+.input_field span{
+    display: block;
+    padding-top: 1em;
+    padding-left: 1em;
+    color: hsl(0, 93%, 68%);
+    text-align: left;
+}
+.btn{
+    position: absolute;
+    top: .5%;
+    right: 0%;
+    padding: 1em 2em;
+    border-radius: 20px;
+    border: 0;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    cursor: pointer;
+}
+.btn:focus{
+    background: linear-gradient(135deg, #fcdbdb, #ff9999);
+    
+}
+.btn i{
+    color: white;
+}
+.fa-exclamation{
+    display: none;
+    position: absolute;
+    top: 13%;
+    right: 25%;
+    background-color: hsl(0, 93%, 68%);
+    padding: .2em .6em;
+    border-radius: 50%;
+    color: white;
+}
+footer{
+    padding: .5em 0;
+    text-align: center;
+}
+@media only screen and (min-width:1000px){
+    body{
+        background-image: url(images/bg-pattern-desktop.svg);
+        height: 100vh;
+    }
+
+    .container #logo{
+        width: 250px;
+        padding-top: 2em;
+        padding-left: 4em;
+    }
+    .content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 100vh !important;
+    } 
+    .content .image_element{
+        width: 50%;
+        background-image: url(images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .info_element{
+        align-self: center;
+        width: 40%;
+    }
+    .info_element h1{
+        text-align: left !important;
+        margin: 0;
+        line-height: 1.1em;
+        font-size: 3em;
+    }
+    .info_element p{
+        font-size: 1.1em;
+        text-align: left !important;
+    }
+    input{
+        padding: 1.2em 3em;
+    }
+    input::placeholder{
+        color: hsl(0, 36%, 70%);
+        opacity: .5;
+    }
+    .btn{
+        padding: 1.2em 3em;
+    }
+    .fa-exclamation{
+        top: 15%;
+        right: 25%;
+        padding: .3em .7em;
+    }
+    footer{
+        margin: 1em 0;
+        text-align: center;
+    }
+}
