@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="information">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </div>
+      <div class="login_form">
+        <div class="offer">
+          <h2><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
+        </div>
+        <form>
+          <div class="field">
+            <input type="text" name="name" id="name" placeholder="First Name ">
+            <img src="images/icon-error.svg" alt="">
+            <p id="errorName">First Name cannot be empty</p>
+          </div>
+          <div class="field">
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name ">
+            <img src="images/icon-error.svg" alt="">
+            <p id="errorLName">Last Name cannot be empty</p>
+          </div>
+          <div class="field">
+            <input type="text" name="email" id="email" placeholder="Email Address">
+            <img src="images/icon-error.svg" alt="">
+            <p id="errorEmail">Looks like this is not an email</p>
+          </div>
+          <div class="field">
+            <input type="password" name="pass" id="pass" placeholder="Password">
+            <img src="images/icon-error.svg" alt="">
+            <p id="errorPassword">Password cannot be empty</p>
+          </div>
+          <input type="submit" onclick="return checkFields()" value="Claim your free trial">
+          <span style="color:hsl(246, 25%, 77%)">By clicking the button, you are agreeing to <span style="color:hsl(0, 100%, 74%) ;">our Terms and Services</span></span>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Aymen Bys</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
